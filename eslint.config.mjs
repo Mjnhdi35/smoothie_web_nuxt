@@ -5,7 +5,7 @@ export default withNuxt(
   // Your custom configs here
   [
     {
-      ignores: ['eslint.config.*'],
+      ignores: ['eslint.config.*', '.nuxt', 'dist'],
       rules: {
         '@stylistic/quotes': ['error', 'single'],
         '@stylistic/comma-dangle': ['error', 'never'],

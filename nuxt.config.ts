@@ -1,39 +1,39 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/eslint", "@nuxt/ui"],
+  modules: ['@nuxt/eslint', '@nuxt/ui'],
   devtools: {
-    enabled: true,
+    enabled: true
   },
   app: {
     head: {
-      title: "Smoothie Studio",
+      title: 'Smoothie Studio',
       htmlAttrs: {
-        lang: "en",
+        lang: 'en'
       },
-      meta: [{ name: "description", content: "Smoothie Studio" }],
+      meta: [{ name: 'description', content: 'Smoothie Studio' }],
       link: [
         {
-          rel: "icon",
-          type: "image/x-icon",
-          href: "/logo.png",
-        },
-      ],
-    },
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/logo.png'
+        }
+      ]
+    }
   },
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
 
   routeRules: {
-    "/": { prerender: true },
+    '/': { prerender: true }
   },
 
-  compatibilityDate: "2025-01-15",
+  compatibilityDate: '2025-01-15',
 
   eslint: {
     config: {
       stylistic: {
-        commaDangle: "never",
-        braceStyle: "1tbs",
-      },
-    },
-  },
-});
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
+})
